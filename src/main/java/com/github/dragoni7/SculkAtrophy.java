@@ -63,12 +63,14 @@ public class SculkAtrophy
         }
     	
     	private static boolean isOnSculkBlock(Player player) {
+    		
+    		if (Config.SCULKBLOCK.get() && player.getBlockStateOn().is(Blocks.SCULK)) {
+    			return true;
+			}
+    		
     		if (player.getFeetBlockState().is(Blocks.SCULK_VEIN)) {
     			return true;
     		}
-    		else if (Config.SCULKBLOCK.get() && player.getFeetBlockState().is(Blocks.SCULK)) {
-    			return true;
-			}
     		
     		return false;
     	}
