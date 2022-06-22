@@ -12,7 +12,7 @@ public class SculkAtrophyEffect extends MobEffect {
 
 	public SculkAtrophyEffect() {
 		super(MobEffectCategory.HARMFUL, 0Xb1fcb6);
-		this.addAttributeModifier(Attributes.MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.2D, AttributeModifier.Operation.MULTIPLY_BASE);
+		this.addAttributeModifier(Attributes.MOVEMENT_SPEED, "7107DE5E-7CE8-4030-940E-514C1F160890", -0.20F, AttributeModifier.Operation.MULTIPLY_BASE);
 	}
 	
 	public void applyEffectTick(LivingEntity entity, int amplifier) {

@@ -16,7 +16,7 @@ public class Networking {
 	}
 	
 	public static void registerMessages() {
-		INSTANCE = NetworkRegistry.newSimpleChannel(new ResourceLocation(SculkAtrophy.MODID), () -> "1.0", s -> true, s -> true);
+		INSTANCE = NetworkRegistry.newSimpleChannel(new ResourceLocation(SculkAtrophy.MODID, "sculkatrophy_network"), () -> "1.0", s -> true, s -> true);
 		
 		INSTANCE.messageBuilder(PacketApplySculkAtrophy.class, nextID())
 		.encoder(PacketApplySculkAtrophy::toBytes)
